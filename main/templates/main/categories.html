@@ -1,0 +1,17 @@
+{% extends "main/home.html" %}
+
+{% block content %}
+<div style="background-color:chartreuse;">
+    {% for c in category %}
+        <a href="{{c.category_slug}}",style="color=red">
+            
+            <div style="background-color: cyan;">
+            <h1>{{c.task_category}}</h1>
+            <h3> {{c.category_summery}} </h3><br>
+            
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

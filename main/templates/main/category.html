@@ -1,0 +1,17 @@
+{% extends "main/home.html" %}
+
+{% block content %}
+<div style="background-color:chartreuse;">
+    {% for c,firstpart in first_p.items %}
+        <a href="{{firstpart}}",style="color=red">
+            
+            <div style="background-color: cyan;">
+            <h1>{{c.task_checkpoint}}</h1>
+            <h3> {{c.checkpoint_content}} </h3><br>
+            
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock %}
